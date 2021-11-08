@@ -1,20 +1,11 @@
-import logo from './logo.svg'
-import './App.css'
-// import { ChakraProvider } from '@chakra-ui/react'
-// import MainPage from './component/MainPage'
-// import SignIn from './component/SignIn'
-import NormalLoginForm from './component/NormalLoginForm'
+import { Outlet, Link } from 'react-router-dom'
 import MainPage from './component/MainPage'
-import Menu from './component/Menu'
-function App() {
+import { Fragment } from 'react'
+export default function App() {
     return (
-        // <ChakraProvider>
-        //     <SignIn></SignIn>
-        // </ChakraProvider>
-        // <NormalLoginForm></NormalLoginForm>
-        // <MainPage></MainPage>
-        <Menu></Menu>
+        <Fragment>
+            <MainPage></MainPage>
+            <Outlet />
+        </Fragment>
     )
 }
-
-export default App

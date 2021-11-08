@@ -1,13 +1,14 @@
 import { Card, Col, Row, Avatar } from 'antd'
-import './Menu.css'
+import './MenuFood.css'
 import 'antd/dist/antd.css'
 import {
     EditOutlined,
     EllipsisOutlined,
     SettingOutlined,
 } from '@ant-design/icons'
-
-export default function Menu() {
+import cardcover from '../assets/images/cardcover.png'
+import random from '../assets/images/random.svg'
+export default function MenuFood() {
     const { Meta } = Card
     return (
         <div className='site-card-wrapper'>
@@ -18,12 +19,7 @@ export default function Menu() {
                         <Col span={6}>
                             <Card
                                 // style={{ width: 300 }}
-                                cover={
-                                    <img
-                                        alt='example'
-                                        src='https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png'
-                                    />
-                                }
+                                cover={<img alt='example' src={cardcover} />}
                                 actions={[
                                     <SettingOutlined key='setting' />,
                                     <EditOutlined key='edit' />,
@@ -31,9 +27,7 @@ export default function Menu() {
                                 ]}
                             >
                                 <Meta
-                                    avatar={
-                                        <Avatar src='https://joeschmoe.io/api/v1/random' />
-                                    }
+                                    avatar={<Avatar src={random} />}
                                     title='Card title'
                                     description='This is the description'
                                 />
