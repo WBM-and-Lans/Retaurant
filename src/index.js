@@ -2,11 +2,10 @@ import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  Switch
 } from "react-router-dom";
 import App from "./App";
-import Expenses from "./routes/expenses";
-import Invoices from "./routes/invoices";
 import MenuFood from "./component/MenuFood";
 import MainPage from "./component/MainPage";
 import Cart from "./component/Cart";
