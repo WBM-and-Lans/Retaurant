@@ -1,4 +1,4 @@
-import { Card, Col, Row, Avatar } from 'antd'
+import { Card, Col, Row, Avatar, Button } from 'antd'
 import './MenuFood.css'
 import 'antd/dist/antd.css'
 import {
@@ -6,8 +6,11 @@ import {
     EllipsisOutlined,
     SettingOutlined,
 } from '@ant-design/icons'
-import cardcover from '../assets/images/cardcover.png'
+import cardcover from '../assets/images/orange.jpg'
 import random from '../assets/images/random.svg'
+import FoodDetail from './FoodDetail'
+import Purchase from './Purchase'
+
 export default function MenuFood() {
     const { Meta } = Card
     return (
@@ -21,9 +24,12 @@ export default function MenuFood() {
                                 // style={{ width: 300 }}
                                 cover={<img alt='example' src={cardcover} />}
                                 actions={[
-                                    <SettingOutlined key='setting' />,
-                                    <EditOutlined key='edit' />,
-                                    <EllipsisOutlined key='ellipsis' />,
+                                    // <SettingOutlined key='setting' />,
+                                    // <EditOutlined key='edit' />,
+                                    // <EllipsisOutlined key='ellipsis' />,
+
+                                    <FoodDetail />,
+                                    <Purchase />,
                                 ]}
                             >
                                 <Meta
