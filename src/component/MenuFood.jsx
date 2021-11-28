@@ -34,8 +34,8 @@ export default function MenuFood() {
                             >
                                 <Meta
                                     avatar={<Avatar src={random} />}
-                                    title='Card title'
-                                    description='This is the description'
+                                    title='Fruit Orange'
+                                    description='Price: 999$'
                                 />
                             </Card>
                         </Col>
